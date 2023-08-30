@@ -275,3 +275,104 @@ h6 {
     font-weight: 400;
     line-height: 8px; /* 100% */
 }
+
+/* work */
+
+.work {
+    margin-top: 160px;
+}
+
+.work__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.work-media {
+    width: 48%;
+}
+
+.work-content {
+    width: 470px;
+    margin-top: 30px;
+}
+
+.work-media__thumb {
+    position: relative;
+}
+.work-media__thumb::before {
+    bottom: 0;
+    position: absolute;
+    z-index: -1;
+    content: url(/assets/img/work__img/before__bg.svg);
+}
+
+.work-media__img {
+    display: block;
+    width: 456px;
+    height: 619px;
+    object-fit: cover;
+}
+
+.work-media__card {
+    position: absolute;
+    top: 76px;
+    left: 334px;
+}
+
+.work-media__congratulations {
+    position: absolute;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    width: 226px;
+    height: 77px;
+    padding: 15px 30px 15px 15px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0px 14px 34px 0px rgba(0, 0, 0, 0.07);
+    bottom: 96px;
+    right: -5px;
+}
+
+.congratulation__wrap-title {
+    color: #212832;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.congratulation__wrap-desc {
+    margin-top: 5px;
+    color: #696d76;
+    font-size: 1.2rem;
+    font-weight: 400;   
+}
+
+.work-content__heading {
+    margin-top: 12px;
+    color: #212832;
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.work-content__inner {
+    margin-top: 70px;
+    display: grid;
+    row-gap: 30px;
+}
+
+.work-content__cta-title {
+    color: #212832;
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 32px; /* 145.455% */
+}
+
+.work-content__cta-desc {
+    margin-top: 16px;
+    color: #696d76;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 175% */
+}
