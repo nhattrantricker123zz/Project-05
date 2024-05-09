@@ -4,6 +4,7 @@
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -88,7 +89,12 @@ h6 {
 .hero {
     padding-top: 76px;
 }
-
+.header {
+    background-color: #fff;
+    position: sticky;
+    z-index: 1;
+    top: -42px;
+}
 .hero__inner {
     display: flex;
     align-items: center;
