@@ -1,23 +1,118 @@
 /* PC */
-@media screen and (min-width: 992px)
-{
-    
+@media screen and (min-width: 992px) {
+    .header__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navbar {
+        flex: 1;
+    }
+
+    .header__action {
+        display: flex;
+        align-items: center;
+    }
 }
 
 /* Tablet & Mobile */
-@media screen and (max-width: 991px)
-{
-    
+@media screen and (max-width: 991px) {
+    .header__inner {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar {
+        width: 100%;
+        margin-bottom: 20px; /* Để tạo khoảng cách giữa các mục trong menu navbar */
+    }
+
+    .header__action {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .hero__inner {
+        flex-direction: column;
+    }
+
+    .hero__left,
+    .hero__right {
+        width: 100%;
+        margin-bottom: 30px; /* Khoảng cách giữa hai phần tử trong hero */
+    }
+
+    .hero__right {
+        text-align: center; /* Canh giữa nội dung trong phần right */
+    }
+
+    .hero__left-title {
+        text-align: center; /* Canh giữa tiêu đề trong phần left */
+    }
+
+    .hero__left-heading {
+        font-size: 24px; /* Kích thước tiêu đề trong phần left */
+    }
+
+    .hero__left-desc {
+        text-align: center; /* Canh giữa mô tả trong phần left */
+    }
+
+    .hero-form {
+        margin: 0 auto; /* Canh giữa form */
+    }
+
+    .hero-form__input {
+        width: 100%; /* Đảm bảo input sử dụng toàn bộ chiều rộng */
+        margin-bottom: 10px; /* Khoảng cách giữa input và nút submit */
+    }
+
+    .hero-left__comment {
+        text-align: center; /* Canh giữa comment */
+    }
+    .work__inner {
+        flex-direction: column; /* Hiển thị các phần tử theo hướng dọc */
+    }
+
+    .work-media,
+    .work-content {
+        width: 100%; /* Sử dụng toàn bộ chiều rộng của phần tử cha */
+        margin-bottom: 30px; /* Khoảng cách giữa các phần tử */
+        text-align: center; /* Canh giữa nội dung */
+    }
+
+    .work-media__thumb {
+        margin-bottom: 20px; /* Khoảng cách giữa hình ảnh và nội dung */
+    }
+
+    .work-media__congratulations {
+        flex-direction: column; /* Hiển thị các phần tử trong phần chúc mừng theo hướng dọc */
+    }
+
+    .congratulation-wrap {
+        text-align: center; /* Canh giữa nội dung trong phần chúc mừng */
+    }
+
+    .work-content__title {
+        text-align: center; /* Canh giữa tiêu đề */
+    }
+
+    .work-content__heading {
+        text-align: center; /* Canh giữa tiêu đề "How It Works" */
+        margin-bottom: 20px; /* Khoảng cách giữa tiêu đề và nội dung */
+    }
+
+    .work-content__cta {
+        text-align: left; /* Canh trái nội dung mỗi mục */
+    }
 }
 
 /* Tablet */
-@media screen and (min-width: 768px) and (min-width: 991px)
-{
-    
+@media screen and (min-width: 768px) and (min-width: 991px) {
 }
 
 /* mobile */
-@media screen and (max-width: 767px)
-{
-    
+@media screen and (max-width: 767px) {
 }
